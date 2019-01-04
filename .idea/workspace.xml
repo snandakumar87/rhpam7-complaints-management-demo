@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e87a6c23-bb7c-42ab-b376-b94b0081a51b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init-openshift.sh" beforeDir="false" afterPath="$PROJECT_DIR$/init-openshift.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init-properties.sh" beforeDir="false" afterPath="$PROJECT_DIR$/init-properties.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/openshift/provision-properties-static.sh" beforeDir="false" afterPath="$PROJECT_DIR$/support/openshift/provision-properties-static.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/openshift/rhpam7-businesscentral-openshift-with-users/contrib/application-roles.properties" beforeDir="false" afterPath="$PROJECT_DIR$/support/openshift/rhpam7-businesscentral-openshift-with-users/contrib/application-roles.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/openshift/rhpam7-businesscentral-openshift-with-users/contrib/application-users.properties" beforeDir="false" afterPath="$PROJECT_DIR$/support/openshift/rhpam7-businesscentral-openshift-with-users/contrib/application-users.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/openshift/provision.sh" beforeDir="false" afterPath="$PROJECT_DIR$/support/openshift/provision.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,12 +45,13 @@
           <entry key="md" value="45" />
           <entry key="properties" value="22" />
           <entry key="sh" value="150" />
+          <entry key="txt" value="73" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="45" />
-          <entry key="PLAIN_TEXT" value="150" />
+          <entry key="PLAIN_TEXT" value="223" />
           <entry key="Properties" value="22" />
         </counts>
       </usages-collector>
@@ -121,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/support/openshift/provision.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="161" column="20" lean-forward="true" selection-start-line="161" selection-start-column="14" selection-end-line="161" selection-end-column="23" />
+            <state relative-caret-position="235">
+              <caret line="272" column="36" lean-forward="true" selection-start-line="272" selection-start-column="36" selection-end-line="272" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -133,17 +130,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/support/openshift/rhpam7-businesscentral-openshift-with-users/contrib/application-users.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="330">
+              <caret line="22" column="72" lean-forward="true" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/support/openshift/rhpam7-businesscentral-openshift-with-users/contrib/application-roles.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+            <state relative-caret-position="225">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -180,6 +177,7 @@
         <option value="$PROJECT_DIR$/init-openshift.sh" />
         <option value="$PROJECT_DIR$/support/openshift/rhpam7-businesscentral-openshift-with-users/contrib/application-users.properties" />
         <option value="$PROJECT_DIR$/support/openshift/rhpam7-businesscentral-openshift-with-users/contrib/application-roles.properties" />
+        <option value="$PROJECT_DIR$/support/openshift/provision.sh" />
       </list>
     </option>
   </component>
@@ -236,7 +234,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546622460972" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546623238432" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -262,6 +260,14 @@
       <option name="presentableId" value="Default" />
       <updated>1546358433752</updated>
     </task>
+    <task id="LOCAL-00001" summary="Modifying the users for the complaints management case">
+      <created>1546622501367</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1546622501367</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -295,6 +301,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Modifying the users for the complaints management case" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifying the users for the complaints management case" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/support/openshift/application-openshift-rhpam.properties">
@@ -374,24 +384,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/support/openshift/provision.sh">
+    <entry file="file://$PROJECT_DIR$/support/openshift/rhpam7-businesscentral-openshift-with-users/contrib/application-roles.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="161" column="20" lean-forward="true" selection-start-line="161" selection-start-column="14" selection-end-line="161" selection-end-column="23" />
+        <state relative-caret-position="225">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/support/openshift/rhpam7-businesscentral-openshift-with-users/contrib/application-users.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="330">
+          <caret line="22" column="72" lean-forward="true" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/support/openshift/rhpam7-businesscentral-openshift-with-users/contrib/application-roles.properties">
+    <entry file="file://$PROJECT_DIR$/support/openshift/provision.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+        <state relative-caret-position="235">
+          <caret line="272" column="36" lean-forward="true" selection-start-line="272" selection-start-column="36" selection-end-line="272" selection-end-column="36" />
         </state>
       </provider>
     </entry>

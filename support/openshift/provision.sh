@@ -276,7 +276,7 @@ function create_application() {
     IMAGE_STREAM_NAMESPACE=${PRJ[0]}
   fi
 
-  oc process -f $SCRIPT_DIR/rhpam70-businesscentral-openshift-with-users.yaml -p DOCKERFILE_REPOSITORY="https://github.com/jbossdemocentral/rhpam7-order-it-hw-demo" -p DOCKERFILE_REF="master" -p DOCKERFILE_CONTEXT="support/openshift/rhpam7-businesscentral-openshift-with-users" -n ${PRJ[0]} | oc create -n ${PRJ[0]} -f -
+  oc process -f $SCRIPT_DIR/rhpam70-businesscentral-openshift-with-users.yaml -p DOCKERFILE_REPOSITORY="https://github.com/MyriamFentanes/rhpam7-complaints-management-demo.git" -p DOCKERFILE_REF="master" -p DOCKERFILE_CONTEXT="support/openshift/rhpam7-businesscentral-openshift-with-users" -n ${PRJ[0]} | oc create -n ${PRJ[0]} -f -
 
   oc create configmap setup-demo-scripts --from-file=$SCRIPT_DIR/bc-clone-git-repository.sh,$SCRIPT_DIR/provision-properties-static.sh
 
