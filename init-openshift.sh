@@ -14,7 +14,7 @@ function echo_header() {
   echo "########################################################################"
 }
 
-PRJ_DEMO="rhpam7-oih"
+PRJ_DEMO="rhpam7-complaints-management"
 PRJ_DEMO_NAME=$(./support/openshift/provision.sh info $PRJ_DEMO | awk '/Project name/{print $3}')
 
 # Check if the project exists

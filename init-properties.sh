@@ -1,5 +1,6 @@
 DEMO="Red Hat PAM 7 - Complaints Management"
 AUTHORS="Red Hat"
+#Change to a jbossdemocentral repo
 PROJECT="git@github.com:snandakumar87/ComplaintsManagementWorkflow"
 PRODUCT="Red Hat Process Automation Manager"
 TARGET=./target
@@ -15,6 +16,7 @@ PAM_KIE_SERVER=rhpam-$PAM_VERSION-kie-server-ee7.zip
 EAP=jboss-eap-7.1.0.zip
 #EAP_PATCH=jboss-eap-6.4.7-patch.zip
 VERSION=7.0
+#Change to a jbossdemocentral repo
 PROJECT_GIT_REPO=https://github.com/snandakumar87/ComplaintsManagementWorkflow
 PROJECT_GIT_REPO_NAME=ComplaintsManagementWorkflow.git
 NIOGIT_PROJECT_GIT_REPO="MySpace/$PROJECT_GIT_REPO_NAME"
