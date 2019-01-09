@@ -315,7 +315,7 @@ function create_application() {
 
   oc expose service rhpam7-complaints-regulatory-soap -n ${PRJ[0]}
 
-  oc patch svc/rhpam7-complaints-regulatory-soap --patch '"spec": { "ports": [ { "name": 8080-tcp, "port": 8080, "protocol": "TCP", "targetPort": 8070 } ]}
+  oc patch svc/rhpam7-complaints-regulatory-soap --patch '"spec": { "ports": [ { "name": 8080-tcp, "port": 8080, "protocol": "TCP", "targetPort": 8070 } ]}'
 
   ORDER_IT_HW_APP_ROUTE=$(oc get route rhpam7-complaints-regulatory-soap | awk 'FNR > 1 {print $2}')
   sed s/.*kieserver\.location.*/kieserver\.location=http:\\/\\/$ORDER_IT_HW_APP_ROUTE\\/rest\\/server/g $SCRIPT_DIR/application-openshift-rhpam.properties.orig > $SCRIPT_DIR/application-openshift-rhpam.properties
