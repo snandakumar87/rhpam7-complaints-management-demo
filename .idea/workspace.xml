@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e87a6c23-bb7c-42ab-b376-b94b0081a51b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init-openshift.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/init-openshift.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init-openshift.sh" beforeDir="false" afterPath="$PROJECT_DIR$/init-openshift.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/openshift/provision-properties-static.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/support/openshift/provision-properties-static.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/openshift/provision-properties-static.sh" beforeDir="false" afterPath="$PROJECT_DIR$/support/openshift/provision-properties-static.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/support/openshift/provision.sh" beforeDir="false" afterPath="$PROJECT_DIR$/support/openshift/provision.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,15 +50,15 @@
           <entry key="md" value="45" />
           <entry key="properties" value="22" />
           <entry key="ps1" value="2" />
-          <entry key="sh" value="163" />
-          <entry key="txt" value="111" />
+          <entry key="sh" value="211" />
+          <entry key="txt" value="214" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="13" />
+          <entry key="Bash" value="61" />
           <entry key="Markdown" value="45" />
-          <entry key="PLAIN_TEXT" value="263" />
+          <entry key="PLAIN_TEXT" value="366" />
           <entry key="Properties" value="22" />
         </counts>
       </usages-collector>
@@ -73,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/support/openshift/provision.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="336" column="1" lean-forward="true" selection-start-line="336" selection-start-column="1" selection-end-line="336" selection-end-column="1" />
+            <state relative-caret-position="483">
+              <caret line="330" lean-forward="true" selection-start-line="330" selection-end-line="330" />
               <folding>
                 <element signature="e#5676#5860#0" />
                 <element signature="e#5884#6338#0" />
@@ -155,7 +151,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547034386365" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547036427240" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -202,7 +198,21 @@
       <option name="project" value="LOCAL" />
       <updated>1546966262335</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="patching the port of the service rhpam-complaints-regulatory-soap">
+      <created>1547034442982</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1547034442982</updated>
+    </task>
+    <task id="LOCAL-00005" summary="patching the port of the service rhpam-complaints-regulatory-soap">
+      <created>1547034715529</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1547034715529</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -224,7 +234,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49928468" weight="0.6759036" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49928468" weight="0.7686747" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007153" side_tool="true" weight="0.5819277" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -267,7 +277,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Modifying the users for the complaints management case" />
     <MESSAGE value="Revising property files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revising property files" />
+    <MESSAGE value="patching the port of the service rhpam-complaints-regulatory-soap" />
+    <option name="LAST_COMMIT_MESSAGE" value="patching the port of the service rhpam-complaints-regulatory-soap" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/support/openshift/application-openshift-rhpam.properties">
@@ -384,8 +395,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/support/openshift/provision.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="336" column="1" lean-forward="true" selection-start-line="336" selection-start-column="1" selection-end-line="336" selection-end-column="1" />
+        <state relative-caret-position="483">
+          <caret line="330" lean-forward="true" selection-start-line="330" selection-end-line="330" />
           <folding>
             <element signature="e#5676#5860#0" />
             <element signature="e#5884#6338#0" />
