@@ -319,6 +319,7 @@ function create_application() {
 
   oc new-app java:8~https://github.com/snandakumar87/demo-rest \
               --name rhpam7-complaints-branch-rest\
+
   oc create configmap rhpam7-complaints-branch-rest-settings-config-map --from-file=$SCRIPT_DIR/settings.xml -n ${PRJ[0]}
 
   oc set volume dc/rhpam7-complaints-branch-rest --add -m /home/jboss/.m2 -t configmap --configmap-name=rhpam7-complaints-branch-rest-settings-config-map -n ${PRJ[0]}
