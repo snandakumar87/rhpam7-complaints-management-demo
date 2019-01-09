@@ -306,6 +306,7 @@ function create_application() {
 
   oc new-app java:8~https://github.com/snandakumar87/soap-regulatory-git \
               --name rhpam7-complaints-regulatory-soap\
+
   oc create configmap rhpam7-complaints-regulatory-soap-settings-config-map --from-file=$SCRIPT_DIR/settings.xml -n ${PRJ[0]}
 
   oc set volume dc/rhpam7-complaints-regulatory-soap --add -m /home/jboss/.m2 -t configmap --configmap-name=rhpam7-complaints-regulatory-soap-settings-config-map -n ${PRJ[0]}
