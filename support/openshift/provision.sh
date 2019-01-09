@@ -305,15 +305,17 @@ function create_application() {
   oc patch dc/$ARG_DEMO-rhpamcentr --type='json' -p "[{'op': 'replace', 'path': '/spec/triggers/0/imageChangeParams/from/name', 'value': 'rhpam70-businesscentral-openshift-with-users:latest'}]"
 
   oc new-app java:8~https://github.com/snandakumar87/soap-regulatory-git \
-              --name soap-regulatory-git\
+              --name rhpam7-complaints-regulatory-soap\
               
   oc create configmap rhpam7-complaints-regulatory-soap-settings-config-map --from-file=$SCRIPT_DIR/settings.xml -n ${PRJ[0]}
 
-  oc set volume dc/rhpam7-complaints-regulatory-soap --add -m /home/jboss/.m2 -t configmap --configmap-name=rhpam7-oih-order-app-settings-config-map -n ${PRJ[0]}
+  oc set volume dc/rhpam7-complaints-regulatory-soap --add -m /home/jboss/.m2 -t configmap --configmap-name=rhpam7-complaints-regulatory-soap-settings-config-map -n ${PRJ[0]}
 
   oc set volume dc/rhpam7-complaints-regulatory-soap --add --claim-size 100Mi --mount-path /data --name rhpam7-oih-order-app-data -n ${PRJ[0]}
 
   oc expose service rhpam7-complaints-regulatory-soap -n ${PRJ[0]}
+
+  oc patch svc/rhpam7-complaints-regulatory-soap --patch '"spec": { "ports": [ { "name": 8080-tcp, "port": 8080, "protocol": "TCP", "targetPort": 8070 } ]}
 
   ORDER_IT_HW_APP_ROUTE=$(oc get route rhpam7-complaints-regulatory-soap | awk 'FNR > 1 {print $2}')
   sed s/.*kieserver\.location.*/kieserver\.location=http:\\/\\/$ORDER_IT_HW_APP_ROUTE\\/rest\\/server/g $SCRIPT_DIR/application-openshift-rhpam.properties.orig > $SCRIPT_DIR/application-openshift-rhpam.properties

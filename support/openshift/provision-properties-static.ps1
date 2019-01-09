@@ -1,4 +1,4 @@
-$PRJ_NAME="rhpam7-complaints-management"
+$PRJ_NAME="rcomplaints-mgmnt"
 $PRJ_DESCRIPTION="Red Hat Process Automation Manager 7 Complaints Management"
 
 #GitHub tag referencing the image streams and templates.
