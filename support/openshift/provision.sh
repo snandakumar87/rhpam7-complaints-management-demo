@@ -306,6 +306,7 @@ function create_application() {
 
   oc new-app java:8~https://github.com/snandakumar87/soap-regulatory-git \
               --name rhpam7-complaints-regulatory-soap\
+	      -e JAVA_OPTIONS="-DbusinessCentralUrl=rhpam7-complaints-regulatory-soap:8070"
 
   oc create configmap rhpam7-complaints-regulatory-soap-settings-config-map --from-file=$SCRIPT_DIR/settings.xml -n ${PRJ[0]}
 
